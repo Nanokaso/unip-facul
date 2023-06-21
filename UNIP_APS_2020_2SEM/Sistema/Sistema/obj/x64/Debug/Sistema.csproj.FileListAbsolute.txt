@@ -1,0 +1,17 @@
+D:\github\UNIP_APS_2020_2SEM\Sistema\Sistema\bin\x64\Debug\DlibDotNetNative.dll
+D:\github\UNIP_APS_2020_2SEM\Sistema\Sistema\bin\x64\Debug\DlibDotNetNativeDnn.dll
+D:\github\UNIP_APS_2020_2SEM\Sistema\Sistema\bin\x64\Debug\Sistema.exe.config
+D:\github\UNIP_APS_2020_2SEM\Sistema\Sistema\bin\x64\Debug\Sistema.exe
+D:\github\UNIP_APS_2020_2SEM\Sistema\Sistema\bin\x64\Debug\Sistema.pdb
+D:\github\UNIP_APS_2020_2SEM\Sistema\Sistema\bin\x64\Debug\DlibDotNet.dll
+D:\github\UNIP_APS_2020_2SEM\Sistema\Sistema\obj\x64\Debug\Sistema.Cadastro.resources
+D:\github\UNIP_APS_2020_2SEM\Sistema\Sistema\obj\x64\Debug\Sistema.Form1.resources
+D:\github\UNIP_APS_2020_2SEM\Sistema\Sistema\obj\x64\Debug\Sistema.Home.resources
+D:\github\UNIP_APS_2020_2SEM\Sistema\Sistema\obj\x64\Debug\Sistema.Login.resources
+D:\github\UNIP_APS_2020_2SEM\Sistema\Sistema\obj\x64\Debug\Sistema.Properties.Resources.resources
+D:\github\UNIP_APS_2020_2SEM\Sistema\Sistema\obj\x64\Debug\Sistema.csproj.GenerateResource.cache
+D:\github\UNIP_APS_2020_2SEM\Sistema\Sistema\obj\x64\Debug\Sistema.csproj.CoreCompileInputs.cache
+D:\github\UNIP_APS_2020_2SEM\Sistema\Sistema\obj\x64\Debug\Sistema.csproj.CopyComplete
+D:\github\UNIP_APS_2020_2SEM\Sistema\Sistema\obj\x64\Debug\Sistema.exe
+D:\github\UNIP_APS_2020_2SEM\Sistema\Sistema\obj\x64\Debug\Sistema.pdb
+D:\github\UNIP_APS_2020_2SEM\Sistema\Sistema\obj\x64\Debug\Sistema.csprojAssemblyReference.cache
