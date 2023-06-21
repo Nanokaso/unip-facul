@@ -1,0 +1,35 @@
+<div class="h-100 w-100 px-2 animation">
+
+    <div class="titulo pt-4" style="display: flex; align-items: center;">
+        <div style="font-size: 19px; padding-left: 0.5rem; font-weight: 700; ">Novo Projeto</div>
+    </div>
+
+    <div class="titulo pt-4" style="display: flex; align-items: center; justify-content: center;">
+        <div class="text-center" style="font-size: 19px; padding-left: 0.5rem; font-weight: 700;">
+            Forneça as seguinte informações para começar um projeto!
+        </div>
+    </div>
+
+
+    <form [formGroup]="formObjeto" class="custom-form-style m-0 mx-auto" style="width: 90%;">
+
+        <div class="group">
+            <input formControlName="nome" type="text" required="required" /><span class="bar"></span>
+            <label>Nome*</label>
+        </div>
+
+        <div class="group">
+            <textarea formControlName="descricao" type="textarea" rows="5" required="required"></textarea><span class="highlight"></span><span
+                class="bar"></span>
+            <label>Descrição*</label>
+        </div>
+
+
+        <div class="btn-box">
+            <button class="btn btn-black mt-4" type="button" (click)="cadastrar();">Salvar projeto</button>
+        </div>
+    </form>
+
+
+
+</div>

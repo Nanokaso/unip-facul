@@ -1,0 +1,10 @@
+<h2 mat-dialog-title></h2>
+<mat-dialog-content [ngClass]="'mat-custom-dialog dialog-' + ( data.customStyle ? data.customStyle : 'default' )">
+  <div class="dialog-bar"></div>
+  <div class="msg-item" *ngFor="let item of data.message">
+    {{ item }}
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="center" class="pt-3 pb-3">  
+  <button mat-raised-button color="primary" class="btn btn-black" (click)="close(true)">{{ data.btnLabel || 'Fechar' }}</button>
+</mat-dialog-actions>

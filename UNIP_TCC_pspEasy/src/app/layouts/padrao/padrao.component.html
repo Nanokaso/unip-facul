@@ -1,0 +1,14 @@
+<div class="h-100 w-100 bg-back" style="display: flex; flex-direction: column;">
+    <div style="flex:1; overflow-y: auto;">
+        <router-outlet></router-outlet>
+    </div>
+    <div
+        style="height: 55px; background-color: #f7b100; border-top: 1px solid #c79000;  display: flex; align-items: center; justify-content: space-evenly;">
+        
+        <img class="img-menu" [routerLink]="['/home']" src="assets/icons/home.svg" alt="" >
+        <img class="img-menu" [routerLink]="['/favoritos']" src="assets/icons/star.svg" alt="" >
+        <img class="img-menu" [routerLink]="['/configuracoes']" src="assets/icons/manage_accounts.svg" alt="" >
+        <img class="img-menu" [routerLink]="['/sobre']" src="assets/icons/help.svg" alt="" >
+
+    </div>
+</div>

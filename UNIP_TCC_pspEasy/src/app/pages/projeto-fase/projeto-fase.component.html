@@ -1,0 +1,47 @@
+<div class="h-100 w-100 animation">
+
+    <div class="titulo pt-3 px-3" style="display: flex; align-items: center; justify-content: space-between">
+        <div style="font-size: 19px; font-weight: 700">
+            <span class="status-out {{FaseVisualizando.Cor}}"> {{ FaseVisualizando.el.Status }} </span>
+            <br>{{ FaseVisualizando.Nome }}
+        </div>
+        <div style="font-size: 19px; font-weight: 700">
+            <button class="btn btn-black px-3" type="button" (click)="escreverAnotacao()">
+                <img src="assets/icons/sticky_note.svg" alt="" class="img-menu" style="width: 1.5rem" />
+            </button>
+        </div>
+    </div>
+    <div class="titulo px-3" style="display: flex; align-items: center">
+        <div style="font-size: 15px; font-weight: 500; text-align: left;">
+            Anotação: {{ FaseVisualizando.el.Anotacao? FaseVisualizando.el.Anotacao: '--' }}
+        </div>
+    </div>
+
+    <div class="titulo pt-4 px-3" style="display: flex; align-items: center; justify-content: space-between">
+        <div style="font-size: 19px; font-weight: 700">
+            <button (click)="voltarFases()" class="btn btn-black px-3" type="button">
+                Voltar para fases
+            </button>
+        </div>
+        <div style="font-size: 19px; font-weight: 700">
+            <button (click)="anterior()" class="btn btn-black px-3 border-r-radius-0" type="button">
+                <img src="assets/icons/arrow_l.svg" alt="" class="img-menu" style="width: 1.5rem" />
+            </button>
+            <button (click)="proximo()" class="btn btn-black px-3 border-l-radius-0" type="button">
+                <img src="assets/icons/arrow_r.svg" alt="" class="img-menu" style="width: 1.5rem" />
+            </button>
+        </div>
+    </div>
+
+    <div class="w-100 px-3 mt-3" style="min-height: 65%; display: grid;">
+
+        <div class="boxitem w-100 m-0 p-3" style="min-height: 100%;">
+            <div class="animation" [innerHTML]="FaseVisualizando.Resumo"></div>
+        </div>
+
+    </div>
+
+    <br>
+
+
+</div>

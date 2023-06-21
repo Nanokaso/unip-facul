@@ -1,0 +1,102 @@
+<div class="h-100 w-100 px-4 animation">
+  <div class="titulo pt-4" style="display: flex; align-items: center; justify-content: space-between">
+    <div style="font-size: 19px; font-weight: 700;align-items: center;" class="d-flex">
+      <div (click)="favoritar();" style="padding: 5px; padding-right: 8px;">
+        <img *ngIf="obj.Favorito" src="assets/icons/starFull.svg" alt="" class="img-menu" style="width: 2rem" />
+        <img *ngIf="!obj.Favorito" src="assets/icons/star.svg" alt="" class="img-menu" style="width: 2rem" />
+      </div>
+      {{ obj.Nome }}
+    </div>
+    <div style="font-size: 19px; font-weight: 700" class="d-flex">
+      
+      <button class="btn btn-black px-3" type="button" [routerLink]="['/projeto-editar/', indexProjeto]">
+        <img src="assets/icons/edit-w.svg" alt="" class="img-menu" style="width: 1.5rem" />
+      </button>
+    </div>
+  </div>
+  <div class="titulo" style="display: flex; align-items: center">
+    <div style="font-size: 15px; font-weight: 500">
+      {{ obj.Descricao }}
+    </div>
+  </div>
+
+  <!-- listagem de item em andamento -->
+  <div *ngIf="listaFasesAtuais && listaFasesAtuais.length > 0" class="mt-4">
+    <div class="titulo" style="display: flex; align-items: center">
+      <div style="font-size: 19px; font-weight: 700">Em andamento</div>
+    </div>
+
+    <div class="h-100"
+      style="overflow-y: scroll; display: block;">
+      <div class="cardProjetoItem {{ item.Cor }}" *ngFor="let item of listaFasesAtuais; let i = index"
+        (click)="irPara(item.Index)">
+        <div class="corpo">
+          <span class="status {{item.Cor}}"> {{ item.Status }} </span>
+          <div class="descricao"> {{ item.Nome }} </div>
+          <div class="progresso">
+            <div class="avanco" style="width: {{item.Avanco}}%;"></div>
+          </div>
+        </div>
+
+        <div class="acoes">
+          <img src="assets/icons/chevron_right.svg" alt="" class="img-menu" style="width: 2rem;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- listagem de item feitos -->
+  <div *ngIf="listaFasesProximas && listaFasesProximas.length > 0" class="mt-4">
+    <div class="titulo" style="display: flex; align-items: center">
+      <div style="font-size: 19px; font-weight: 700">Próximos</div>
+    </div>
+
+    <div class="h-100"
+      style="overflow-y: scroll; display: block;">
+      <div style="opacity: 0.7;" class="cardProjetoItem {{ item.Cor }}" *ngFor="let item of listaFasesProximas; let i = index">
+        <div class="corpo">
+          <span class="status {{item.Cor}}"> {{ item.Status }} </span>
+          <div class="descricao"> {{ item.Nome }} </div>
+          <div class="progresso">
+            <div class="avanco" style="width: 0px;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- listagem de item feitos -->
+  <div class="mt-4">
+    <div *ngIf="listaFasesFeitas && listaFasesFeitas.length > 0" class="titulo"
+      style="display: flex; align-items: center">
+      <div style="font-size: 19px; font-weight: 700">{{listaFasesFeitas.length}} Concluidos </div>
+    </div>
+
+    <div *ngIf="listaFasesFeitas && listaFasesFeitas.length > 0" class="h-100"
+      style="overflow-y: scroll; display: block;">
+      <div class="cardProjetoItem {{ item.Cor }}" *ngFor="let item of listaFasesFeitas; let i = index"
+        (click)="irPara(item.Index)">
+        <div class="corpo">
+          <span class="status {{item.Cor}}"> {{ item.Status }} </span>
+          <div class="descricao"> {{ item.Nome }} </div>
+          <div class="progresso">
+            <div class="avanco" style="width: 100%;"></div>
+          </div>
+        </div>
+        <!-- [routerLink]="['/projeto-editar/', i]" -->
+        <div class="acoes">
+          <img src="assets/icons/chevron_right.svg" alt="" class="img-menu" style="width: 2rem;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="listaFasesFeitas && listaFasesFeitas.length > 0" class="btn-box d-flex">
+    <button class="btn btn-black mt-4 mx-auto" (click)="resetar()" type="button">
+      <img src="assets/icons/restart.svg" alt="" class="img-menu" style="width: 1.5rem" />
+      Resetar Fases</button>
+  </div>
+
+  <br>
+
+</div>

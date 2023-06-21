@@ -1,0 +1,17 @@
+<h2 mat-dialog-title></h2>
+<mat-dialog-content class="mat-custom-dialog dialog-default">
+    <form [formGroup]="formObjeto" class="custom-form-style m-0 mx-auto" style="width: 100%;">
+        <div class="group">
+            <textarea formControlName="anotacao" type="textarea" rows="5" required="required"></textarea><span
+                class="highlight"></span><span class="bar"></span>
+            <label>Anotação</label>
+        </div>
+        <div class="btn-box w-100 d-flex" style="justify-content: space-between;">
+        </div>
+    </form>
+</mat-dialog-content>
+<mat-dialog-actions class="pt-3 pb-3" style="justify-content: space-evenly;">
+    <button mat-raised-button class="btn btn-black" type="button" (click)="save();">Salvar</button>
+    
+    <button mat-raised-button class="btn btn-black" (click)="close()">Fechar</button>
+</mat-dialog-actions>

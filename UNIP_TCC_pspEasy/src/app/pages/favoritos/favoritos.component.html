@@ -1,0 +1,44 @@
+<div class="h-100 w-100 p-2">
+
+  <div *ngIf="!listaFavoritos || listaFavoritos.length<= 0"
+    class="h-100 d-flex align-items-center justify-content-center flex-column">
+    <img src="assets/ic/no_favorites.svg" alt="" style="width: 60%;">
+    <h5 class="my-3 text-center">Você ainda não favoritou <br> nenhum projeto!</h5>
+  </div>
+
+  <div *ngIf="listaFavoritos && listaFavoritos.length > 0" class="mt-2"
+    style="display: flex; flex-direction: column; flex: 1;">
+
+    <div class="titulo mt-2" style="display: flex; align-items: flex-end; justify-content: space-between;">
+      <div style="font-size: 15px; padding-left: 0.5rem; font-weight: 700;">
+        {{listaFavoritos.length}} Projeto(s) localizado(s)
+      </div>
+
+    </div>
+
+    <div *ngIf="listaFavoritos && listaFavoritos.length > 0" class="titulo mt-3"
+      style="display: flex; align-items: center;">
+      <div style="font-size: 19px; padding-left: 0.5rem; font-weight: 700;">Favoritos</div>
+    </div>
+
+    <!-- Favoritos -->
+
+    <div *ngIf="listaFavoritos && listaFavoritos.length > 0" class="h-100" style="overflow-y: scroll; display: block;">
+      <div class="cardProjetoItem {{ item.Cor }}" *ngFor="let item of listaFavoritos; let i = index"
+        [routerLink]="['/projeto-home/', i]">
+        <div class="corpo">
+          <span class="status {{item.Cor}}"> {{ item.Fase.Status }} {{ item.Fase.Nome }} </span>
+          <div class="descricao"> {{ item.Projeto.Nome }} </div>
+          <div class="progresso">
+            <div class="avanco" style="width: {{item.Avanco}}%;"></div>
+          </div>
+        </div>
+        <div class="acoes">
+          <img src="assets/icons/chevron_right.svg" alt="" class="img-menu" style="width: 2rem;">
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>

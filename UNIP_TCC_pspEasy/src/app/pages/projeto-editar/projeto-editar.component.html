@@ -1,0 +1,44 @@
+<div class="h-100 w-100 px-3 animation">
+
+    <div class="titulo pt-4" style="display: flex; align-items: center; justify-content: space-between">
+        <div style="font-size: 19px; font-weight: 700">
+            Editando
+        </div>
+        <div style="font-size: 19px; font-weight: 700">
+            <button (click)="apagarProjeto()" class="btn  btn-black px-3" type="button">
+                Apagar projeto
+            </button>
+        </div>
+    </div>
+
+
+    <div class="titulo pt-4" style="display: flex; align-items: center; justify-content: center;">
+        <div class="text-center" style="font-size: 19px; padding-left: 0.5rem; font-weight: 700;">
+            Edite as informações como preferir!
+        </div>
+    </div>
+
+
+    <form [formGroup]="formObjeto" class="custom-form-style m-0 mx-auto" style="width: 100%;">
+
+        <div class="group">
+            <input formControlName="nome" type="text" required="required" /><span class="bar"></span>
+            <label>Nome*</label>
+        </div>
+
+        <div class="group">
+            <textarea formControlName="descricao" type="textarea" rows="5" required="required"></textarea><span
+                class="highlight"></span><span class="bar"></span>
+            <label>Descrição*</label>
+        </div>
+
+
+        <div class="btn-box w-100 d-flex" style="justify-content: space-between;">
+            <button class="btn btn-black mt-4" type="button" [routerLink]="['/projeto-home/', indexProjeto]">Voltar</button>
+            <button class="btn btn-black mt-4" type="button" (click)="atualizar();">Atualizar projeto</button>
+        </div>
+    </form>
+
+
+
+</div>

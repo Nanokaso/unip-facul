@@ -1,0 +1,85 @@
+<div class="h-100 w-100 px-2 animation">
+
+  <div *ngIf="(!listaTodos || listaTodos.length<= 0) && (!listaFavoritos || listaFavoritos.length<= 0)"
+    class="h-100 d-flex align-items-center justify-content-center flex-column">
+    <img src="assets/ic/add_document.svg" alt="" style="width: 60%;">
+    <h5 class="my-3">Crie um projeto já!</h5>
+
+    <!-- <button type="button" class="btn btn-black mt-3" (click)="debugCriarProjeto()">Novo Projeto</button> -->
+    <button type="button" class="btn btn-black mt-3" [routerLink]="['/projeto-cadastrar']">Novo Projeto</button>
+  </div>
+
+  <!-- <div class="titulo" style="display: flex; align-items: center;">
+        <img src="assets/icons/home.svg" alt="" class="img-menu d-none" style="width: 2rem;">
+        <div style="font-size: 19px; padding-left: 0.5rem; font-weight: 700; ">Home</div>
+    </div> -->
+
+
+
+  <div *ngIf="(listaTodos && listaTodos.length > 0) || (listaFavoritos && listaFavoritos.length > 0)" class="mt-2"
+    style="display: flex; flex-direction: column; flex: 1;">
+
+    <div class="titulo mt-2" style="display: flex; align-items: flex-end; justify-content: space-between;">
+      <div style="font-size: 15px; padding-left: 0.5rem; font-weight: 700;">
+        {{listaTodos.length > 0 ? listaTodos.length + " Projeto(s) localizado(s)": "" }}
+      </div>
+
+      <!-- <button type="button" class="btn btn-black mt-3 ml-2" (click)="debugCriarProjeto()">Novo Projeto</button> -->
+      <button type="button" class="btn btn-black mt-3 ml-2" [routerLink]="['/projeto-cadastrar']">Novo Projeto</button>
+
+    </div>
+
+    <div *ngIf="listaFavoritos && listaFavoritos.length > 0" class="titulo mt-3"
+      style="display: flex; align-items: center;">
+      <div style="font-size: 19px; padding-left: 0.5rem; font-weight: 700;">Favoritos</div>
+    </div>
+
+    <div *ngIf="listaFavoritos && listaFavoritos.length > 0" class="h-100" style="overflow-y: scroll; display: block;">
+      <div class="cardProjetoItem {{ item.Cor }}" *ngFor="let item of listaFavoritos; let i = index"
+        [routerLink]="['/projeto-home/', i]">
+        <div class="corpo">
+          <span class="status {{item.Cor}}"> {{ item.Fase.Status }} {{ item.Fase.Nome }} </span>
+          <div class="descricao"> {{ item.Projeto.Nome }} </div>
+          <div class="progresso">
+            <div class="avanco" style="width: {{item.Avanco}}%;"></div>
+          </div>
+        </div>
+        <!-- [routerLink]="['/projeto-editar/', i]" -->
+        <div class="acoes">
+          <img src="assets/icons/chevron_right.svg" alt="" class="img-menu" style="width: 2rem;">
+        </div>
+      </div>
+    </div>
+
+    <!-- Todas as listagens -->
+
+    <div *ngIf="listaTodos && listaTodos.length > 0" class="titulo mt-3" style="display: flex; align-items: center;">
+      <div style="font-size: 19px; padding-left: 0.5rem; font-weight: 700;">Todos</div>
+    </div>
+
+    <div class="h-100" style="overflow-y: scroll; display: block;">
+      <div class="cardProjetoItem {{ item.Cor }}" *ngFor="let item of listaTodos; let i = index"
+        [routerLink]="['/projeto-home/', i]">
+        <div class="corpo">
+          <span class="status {{item.Cor}}"> {{ item.Fase.Status }} {{ item.Fase.Nome }} </span>
+          <div class="descricao"> {{ item.Projeto.Nome }} </div>
+          <div class="progresso">
+            <div class="avanco" style="width: {{item.Avanco}}%;"></div>
+          </div>
+        </div>
+        <!-- [routerLink]="['/projeto-editar/', i]" -->
+        <div class="acoes">
+          <img src="assets/icons/chevron_right.svg" alt="" class="img-menu" style="width: 2rem;">
+        </div>
+      </div>
+    </div>
+
+
+
+    <br />
+
+
+  </div>
+
+
+</div>
