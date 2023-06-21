@@ -1,0 +1,72 @@
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\bin\Debug\netcoreapp2.2\onStorm.deps.json
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\bin\Debug\netcoreapp2.2\onStorm.runtimeconfig.json
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\bin\Debug\netcoreapp2.2\onStorm.runtimeconfig.dev.json
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\bin\Debug\netcoreapp2.2\onStorm.dll
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\bin\Debug\netcoreapp2.2\onStorm.pdb
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\bin\Debug\netcoreapp2.2\onStorm.Views.dll
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\bin\Debug\netcoreapp2.2\onStorm.Views.pdb
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\onStorm.csprojAssemblyReference.cache
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\onStorm.RazorAssemblyInfo.cache
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\onStorm.RazorAssemblyInfo.cs
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\onStorm.AssemblyInfoInputs.cache
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\onStorm.AssemblyInfo.cs
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\onStorm.TagHelpers.input.cache
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\onStorm.TagHelpers.output.cache
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\onStorm.RazorCoreGenerate.cache
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\onStorm.RazorTargetAssemblyInfo.cache
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\onStorm.RazorTargetAssemblyInfo.cs
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\onStorm.Views.pdb
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\onStorm.dll
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\onStorm.pdb
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\onStorm.csproj.CopyComplete
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\Razor\Views\Adm\Index.cshtml.g.cs
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\Razor\Views\Dashboard\Index.cshtml.g.cs
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LayoutAdm.cshtml.g.cs
+C:\Sistemas\_facul\Aps 2020\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LayoutLogin.cshtml.g.cs
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\bin\Debug\netcoreapp2.2\onStorm.deps.json
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\bin\Debug\netcoreapp2.2\onStorm.runtimeconfig.json
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\bin\Debug\netcoreapp2.2\onStorm.runtimeconfig.dev.json
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\bin\Debug\netcoreapp2.2\onStorm.dll
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\bin\Debug\netcoreapp2.2\onStorm.pdb
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\bin\Debug\netcoreapp2.2\onStorm.Views.dll
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\bin\Debug\netcoreapp2.2\onStorm.Views.pdb
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\onStorm.csprojAssemblyReference.cache
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\onStorm.RazorAssemblyInfo.cache
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\onStorm.RazorAssemblyInfo.cs
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\onStorm.AssemblyInfoInputs.cache
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\onStorm.AssemblyInfo.cs
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\onStorm.TagHelpers.input.cache
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\onStorm.TagHelpers.output.cache
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\onStorm.RazorCoreGenerate.cache
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\Razor\Views\Adm\Index.cshtml.g.cs
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\Razor\Views\Dashboard\Index.cshtml.g.cs
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LayoutAdm.cshtml.g.cs
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LayoutLogin.cshtml.g.cs
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\onStorm.RazorTargetAssemblyInfo.cache
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\onStorm.RazorTargetAssemblyInfo.cs
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\onStorm.Views.pdb
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\onStorm.dll
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\onStorm.pdb
+C:\Sistemas\_facul\aps 2020 git\APS20201SEM\software\onStorm\onStorm\obj\Debug\netcoreapp2.2\onStorm.csproj.CopyComplete

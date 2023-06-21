@@ -1,0 +1,18 @@
+﻿@{
+    object multiTenant = this;
+
+    try
+    {
+        if( this.Context.Request.Path.Value.Contains("Dashboard") )
+        {
+           Layout = "_LayoutAdm";
+        }
+        else
+        { 
+            Layout = "_Layout";
+        }
+    }
+    catch {
+        Layout = "_Layout";
+    }
+}

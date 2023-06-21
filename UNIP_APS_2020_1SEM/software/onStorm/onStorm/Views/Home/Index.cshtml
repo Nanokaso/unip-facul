@@ -1,0 +1,284 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">OnStorm</h1>
+    <p>Informações climaticas</p>
+</div>
+
+
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.mapbox.com/mapbox.js/v3.3.0/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v3.3.0/mapbox.css' rel='stylesheet' />
+
+<div id='map' style='width: 100%; height: 500px;' class="map"></div>
+<p class="text-info">* clique em um local para visualizar mais detalhes</p>
+<script>
+
+    $(document).ready(function () {
+
+        $.get("Home/GetLocais", function (data) {
+
+            if (data != undefined && data.status === 0) {
+                var style_object = 'mapbox://styles/mapbox/light-v10';
+                L.mapbox.accessToken = 'pk.eyJ1IjoibmFub2thc29nb25nb24iLCJhIjoiY2s5dDFtZ2F5MWJhMzNsbzFiZm1rem11aiJ9.a8yVJvKV6QuN6OeYigVV4Q';
+
+                var lista = [];
+
+                for (var i = 0; i < data.lista.length; i++) {
+                    var o = data.lista[i];
+                    lista.push({
+                        type: 'Feature',
+                        geometry: {
+                            type: 'Point',
+                            coordinates: [parseFloat(o.lon), parseFloat(o.lat)]
+                        },
+                        properties: {
+                            title: o.nome,
+                            description: o.nome,
+                            icon: {
+                                iconUrl: o.img,
+                                iconSize: [14, 14], // size of the icon
+                                iconAnchor: [7, 7], // point of the icon which will correspond to marker's location
+                                popupAnchor: [0, -7], // point from which the popup should open relative to the iconAnchor
+                                className: 'dot'                                
+                            }
+                        }
+                    });
+                }
+
+
+                var mapPopupsJS = L.mapbox.map('map')
+                    .setView([5, -50], 3)
+                    .addLayer(L.mapbox.styleLayer(style_object));
+                var myLayer = L.mapbox.featureLayer().addTo(mapPopupsJS);
+
+
+                myLayer.on('layeradd', function (e) {
+                    var marker = e.layer,
+                        feature = marker.feature;
+                    marker.setIcon(L.icon(feature.properties.icon));
+                    var content = '<div class="text-center"><p><strong>' + feature.properties.title + '</strong> <br/> <button type="button" class="btn btn-link">Visualizar</button> </p></    div>';
+                    marker.bindPopup(content);
+                });
+                myLayer.setGeoJSON(lista);
+            }
+
+        });
+
+    });
+
+
+
+    //var style_object = 'mapbox://styles/mapbox/navigation-guidance-day-v4';
+    ////var style_object = 'mapbox://styles/mapbox/streets-v11';
+    //L.mapbox.accessToken = 'pk.eyJ1IjoibmFub2thc29nb25nb24iLCJhIjoiY2s5dDFtZ2F5MWJhMzNsbzFiZm1rem11aiJ9.a8yVJvKV6QuN6OeYigVV4Q';
+
+
+
+
+    //var mapPopupsJS = L.mapbox.map('map')
+    //    .setView([-56.897687, -20.236641], 1)
+    //    .addLayer(L.mapbox.styleLayer(style_object));
+    //var myLayer = L.mapbox.featureLayer().addTo(mapPopupsJS);
+
+    //var geojson = [
+    //    {
+    //        type: 'Feature',
+    //        geometry: {
+    //            type: 'Point',
+    //            coordinates: [-56.897687, -20.236641]
+    //        },
+    //        properties: {
+    //            title: 'Mapbox DC',
+    //            description: '1714 14th St NW, Washington DC',
+    //            icon: {
+    //                iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Map_marker_font_awesome.svg/512px-Map_marker_font_awesome.svg.png',
+    //                iconSize: [50, 50], // size of the icon
+    //                iconAnchor: [25, 25], // point of the icon which will correspond to marker's location
+    //                popupAnchor: [0, -25], // point from which the popup should open relative to the iconAnchor
+    //                className: 'dot'
+    //            }
+    //        }
+    //    },
+    //    {
+    //        type: 'Feature',
+    //        geometry: {
+    //            type: 'Point',
+    //            coordinates: [-57.897687, -20.236641]
+    //        },
+    //        properties: {
+    //            title: 'Mapbox SF',
+    //            description: '155 9th St, San Francisco',
+    //            icon: {
+    //                iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Map_marker_font_awesome.svg/512px-Map_marker_font_awesome.svg.png',
+    //                iconSize: [50, 50], // size of the icon
+    //                iconAnchor: [25, 25], // point of the icon which will correspond to marker's location
+    //                popupAnchor: [0, -25], // point from which the popup should open relative to the iconAnchor
+    //                className: 'dot'
+    //            }
+    //        }
+    //    }
+    //];
+
+    //// Set a custom icon on each marker based on feature properties.
+    //myLayer.on('layeradd', function (e) {
+    //    var marker = e.layer,
+    //        feature = marker.feature;
+    //    marker.setIcon(L.icon(feature.properties.icon));
+    //    var content = '<p><strong>' + feature.properties.title + '</strong></p>';
+    //    marker.bindPopup(content);
+    //});
+    //myLayer.setGeoJSON(geojson);
+    //$(document).ready(function () {
+    //    $(".dot").on("click", function () {
+    //        console.log($(this));
+    //    });
+    //});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //var mapOne = L.mapbox.map('map')
+    //    .setView([37.8, -96], 4)
+    //    .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/light-v10'));
+    //var myLayer = L.mapbox.featureLayer().addTo(mapOne);
+
+    //var geojson = [
+    //    {
+    //        type: 'Feature',
+    //        geometry: {
+    //            type: 'Point',
+    //            coordinates: [-77.031952, 38.913184]
+    //        },
+    //        properties: {
+    //            icon: {
+    //                iconUrl: 'https://www.mapbox.com/mapbox.js/assets/images/astronaut1.png',
+    //                iconSize: [50, 50], // size of the icon
+    //                iconAnchor: [25, 25], // point of the icon which will correspond to marker's location
+    //                popupAnchor: [0, -25], // point from which the popup should open relative to the iconAnchor
+    //                className: 'dot'
+    //            }
+    //        }
+    //    },
+    //    {
+    //        type: 'Feature',
+    //        geometry: {
+    //            type: 'Point',
+    //            coordinates: [-122.413682, 37.775408]
+    //        },
+    //        properties: {
+    //            icon: {
+    //                iconUrl: 'https://www.mapbox.com/mapbox.js/assets/images/astronaut2.png',
+    //                iconSize: [50, 50], // size of the icon
+    //                iconAnchor: [25, 25], // point of the icon which will correspond to marker's location
+    //                popupAnchor: [0, -25], // point from which the popup should open relative to the iconAnchor
+    //                className: 'dot'
+    //            }
+    //        }
+    //    }
+    //];
+    //myLayer.on('layeradd', function (e) {
+    //    var marker = e.layer,
+    //        feature = marker.feature;
+    //    marker.setIcon(L.icon(feature.properties.icon));
+    //});
+    //myLayer.setGeoJSON(geojson);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //var mapLeaflet = L.mapbox.map('map')
+    //    .setView([-56.897687, -20.236641], 2)
+    //    .addLayer(L.mapbox.styleLayer(style_object));
+
+    //L.marker([38.913184, -77.031952]).addTo(mapLeaflet);
+    //L.marker([37.775408, -122.413682]).addTo(mapLeaflet);
+
+    //    Querência
+    //Mato Grosso, 78643-000
+    //,
+
+    //var geojson = [
+    //    {
+    //        type: 'feature',
+    //        geometry: {
+    //            type: 'point',
+    //            coordinates: [-77.031952, 38.913184]
+    //        }
+    //    },
+    //    {
+    //        type: 'feature',
+    //        geometry: {
+    //            type: 'point',
+    //            coordinates: [-122.413682, 37.775408]
+    //        }
+    //    }
+    //];
+
+    //L.marker(geojson).addTo(mapLeaflet);
+
+    //var mapGeo = L.mapbox.map('map_geo')
+    //    .setView([37.8, -96], 4)
+    //    .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/light-v10'));
+
+
+    //mapGeo.scrollWheelZoom.disable();
+
+
+
+    ////https://www.google.com.br/maps/-22.4643117,-50.9860535,6.42z
+    //var map = new mapboxgl.Map({
+    //    container: 'map',
+    //    center: [-56.897687, -20.236641],
+    //    zoom: 2,
+    //    style: style_object,
+    //});
+
+    //map.addControl(new mapboxgl.NavigationControl());
+
+    //var map = new mapboxgl.Map({
+    //    container: 'map',
+    //    style: 'mapbox://styles/mapbox/navigation-guidance-day-v4'
+    //});
+</script>
+
+
+
+
+@*AIzaSyDmiyzNBYshgkSiws_Q6WWWm8ERl-idzUE*@
+@*http://www.macoratti.net/13/08/c_maps.htm*@
+@*https://developers.google.com/maps/documentation/javascript/adding-a-google-map*@

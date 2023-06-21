@@ -1,0 +1,128 @@
+_____________________________________
+Produto 	R$ 19,99
+Custo de envio 	R$ 19,90
+Pagamento 	R$ 39,89 Sem juros
+_____________________________________
+Produto 	R$ 8,90
+Custo de envio 	R$ 8,90
+Pagamento 	R$ 17,80 Sem juros
+_____________________________________
+Produto 	R$ 16,99
+Custo de envio 	R$ 8,90
+Pagamento 	R$ 25,89 Sem juros
+_____________________________________
+Produto 	R$ 16,99
+Custo de envio 	R$ 8,90
+Pagamento 	R$ 25,89 Sem juros
+_____________________________________
+Produto 	R$ 11,90
+Custo de envio 	R$ 8,90
+Pagamento 	R$ 20,80 Sem juros
+_____________________________________
+Produto 	R$ 15,90
+Custo de envio 	R$ 8,90
+Pagamento 	R$ 24,80 Sem juros
+_____________________________________
+Produto 	R$ 15,00
+Custo de envio 	R$ 8,90
+Pagamento 	R$ 23,90 Sem juros
+_____________________________________
+Produto 	R$ 13,50
+Custo de envio 	R$ 8,90
+Pagamento 	R$ 22,40 Sem juros
+_____________________________________
+Produto 	R$ 18,00
+Custo de envio 	R$ 8,90
+Pagamento 	R$ 26,90 Sem juros
+_____________________________________
+Produto 	R$ 66,49
+Custo de envio 	R$ 9,90
+Pagamento 	R$ 76,39 Sem juros
+
+_____________________________________
+
+Tudo com frete: 304,66
+Tudo sem frete: 203,66
+Somente frete:  101,00
+
+____________________________________________________________________________________________________________________________________________________
+
+
+Item: Arduino Uno R3
+Qtd: 1
+Valor: 59,99
+Link: https://produto.mercadolivre.com.br/MLB-1495957453-placa-compativel-arduino-uno-r3-smdcom-cabo-fonte-externa-_JM?quantity=1#position=1&type=item&tracking_id=8b2eb7ad-817d-442a-8d32-6b8933281e1f
+-------------------------------
+
+Item: Módulo Wifi (ESP8266)
+Qtd: 1
+Valor: 18
+Link: https://produto.mercadolivre.com.br/MLB-1459964572-modulo-wi-fi-esp8266-esp-01-_JM?quantity=1#position=23&type=item&tracking_id=a01c2f9a-3f7d-425a-843e-5154b22e46f3
+-------------------------------
+
+Item: 1 kΩ Resistor
+Qtd: 2
+Valor: 16,99
+Link: https://produto.mercadolivre.com.br/MLB-1406365584-100un-resistor-18w-escolha-1-valor-ohmico-na-lista-_JM?quantity=1&variation=49136264227&onAttributesExp=true#position=3&type=item&tracking_id=fe8968e1-0d02-46bd-ab3f-bfaffe5d9dd3
+-------------------------------
+
+Item: 2.2 kΩ Resistor
+Qtd: 2
+Valor: 16,99
+Link: https://produto.mercadolivre.com.br/MLB-1406365584-100un-resistor-18w-escolha-1-valor-ohmico-na-lista-_JM?quantity=1&variation=49136264227&onAttributesExp=true#position=3&type=item&tracking_id=fe8968e1-0d02-46bd-ab3f-bfaffe5d9dd3
+-------------------------------
+
+Item: Sensor de temperatura [TMP36]
+Qtd: 1
+Valor: 8,90
+Link: https://produto.mercadolivre.com.br/MLB-1005295035-tmp36-arduino-sensor-temperatura-_JM?quantity=1#position=1&type=item&tracking_id=24be36bf-7790-48f2-92de-c6df48091777
+-------------------------------
+
+Item: Buzzer
+Qtd: 1
+Valor: 15
+Link: https://produto.mercadolivre.com.br/MLB-741836761-modulo-de-buzzer-passivo-para-arduino-_JM?quantity=1#position=4&type=item&tracking_id=a243b911-1fa5-47af-a25a-4b36d2fe44ed
+-------------------------------
+
+Item: Sensor de chuva LdG
+Qtd: 1
+Valor: 15
+Link: https://produto.mercadolivre.com.br/MLB-721756190-modulo-sensor-de-chuva-arduino-pic-_JM?quantity=1#position=1&type=item&tracking_id=1ff670b5-c5b2-43e7-8979-a463d9136624
+-------------------------------
+
+Item: LED
+Qtd: 1
+Valor: 19,99
+Link: https://produto.mercadolivre.com.br/MLB-1376183499-100-x-led-5mm-alto-brilho-varias-cores-arduino-artesanato-_JM?quantity=1&variation=47157562942#position=2&type=item&tracking_id=2b671df7-4642-403c-b189-cf17583b2bdb
+-------------------------------
+
+Item: Protoboard
+Qtd: 1
+Valor: 13,50
+Link: https://produto.mercadolivre.com.br/MLB-933371332-protoboard-breadboard-400-pontos-furos-pinos-_JM?quantity=1#position=1&type=item&tracking_id=3a66d23f-93b8-45f1-8ae0-5eccaa11a0e4
+-------------------------------
+
+Item: Jumpers Macho
+Qtd: 1
+Valor: 15,90
+Link: https://produto.mercadolivre.com.br/MLB-1440191063-kit-fio-jumper-protoboard-macho-macho-65pcs-p-arduino-pic-_JM?quantity=1#position=6&type=item&tracking_id=2abc31c5-446e-4240-bd78-991141ea47fb
+
+-------------------------------
+
+Item: Jumpers Macho Femea
+Qtd: 1
+Valor: 11,90
+Link: https://produto.mercadolivre.com.br/MLB-985669692-cabo-wire-jumper-20cm-40-fios-fmea-macho-protoboard-arduino-_JM?quantity=1#position=1&type=item&tracking_id=2abc31c5-446e-4240-bd78-991141ea47fb
+
+-------------------------------
+
+Soma:
+212,16
+
+
+Outros Links de utilidade:
+https://produto.mercadolivre.com.br/MLB-1433323383-kit-arduino-uno-r3-iniciante-ultrassonico-completo-curso-_JM?quantity=1#position=3&type=item&tracking_id=8b2eb7ad-817d-442a-8d32-6b8933281e1f
+
+https://produto.mercadolivre.com.br/MLB-1160948213-kit-10-modulo-esp8266-wifi-80211-bgn-p-arduino-wifi-nota-_JM?quantity=1#position=1&type=item&tracking_id=a01c2f9a-3f7d-425a-843e-5154b22e46f3
+
+
