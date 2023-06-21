@@ -1,0 +1,423 @@
+		
+
+CREATE TABLE SuporteContato ( 
+		IdContato INT PRIMARY KEY AUTO_INCREMENT, 
+		Assunto VARCHAR(1000),
+		Mensagem VARCHAR(1000),
+		Email VARCHAR(1000),
+		Solucao VARCHAR(1000),
+		Obs VARCHAR(1000),
+		DtCriacao DATETIME,
+		DtSolucao DATETIME,
+		DtResolvido DATETIME,
+		FlgResolvido BOOLEAN);
+
+
+CREATE TABLE ComLogAcesso ( 
+		IdLogAcesso INT PRIMARY KEY AUTO_INCREMENT, 
+		IdPagina INT,
+		IdUsuario INT,
+		DtAcesso DATETIME,
+		IdComUsuario INT);
+
+
+CREATE TABLE ComPostCanalVoto ( 
+		IdPostCanal INT, 
+		IdComUsuario INT);
+
+
+CREATE TABLE ComPostMensagemVoto ( 
+		IdPostMensagem INT, 
+		IdComUsuario INT);
+
+
+CREATE TABLE SuporteChamado ( 
+		IdChamado INT PRIMARY KEY AUTO_INCREMENT, 
+		DtCriacao DATETIME,
+		FlgAberto BOOLEAN,
+		IdSetor INT);
+
+
+CREATE TABLE SuporteChamadoMensagem ( 
+		IdMensagem INT PRIMARY KEY AUTO_INCREMENT, 
+		IdUsuario INT,
+		Mensagem VARCHAR(1000),
+		Dtenvio DATETIME);
+
+
+CREATE TABLE SuporteChamadoUsuario ( 
+		IdChamado INT,  
+		IdUsuario INT,
+		FlgAtivo BOOLEAN);
+
+
+CREATE TABLE SuporteChamadoSetor ( 
+		IdSetor INT PRIMARY KEY AUTO_INCREMENT, 
+		DsSetor VARCHAR(1000));
+
+
+CREATE TABLE SuporteChamadoSetorUsuario ( 
+		IdUsuario INT, 
+		IdSetor INT);
+
+
+CREATE TABLE SuporteFaq ( 
+		IdFaq INT PRIMARY KEY AUTO_INCREMENT, 
+		DsFaq VARCHAR(1000),
+		Duvida VARCHAR(1000),
+		Resposta VARCHAR(1000),
+		IdFaqCategoria INT,
+		IdFaqArea INT,
+		DtCriacao DATETIME,
+		DtEdicao DATETIME);
+
+
+CREATE TABLE SuporteFaqCategoria ( 
+		IdFaqCategoria INT PRIMARY KEY AUTO_INCREMENT, 
+		DsFaqCategoria VARCHAR(1000),
+		Ordem VARCHAR(1000),
+		FlgAtivo BOOLEAN);
+
+
+CREATE TABLE SuporteFaqArea ( 
+		IdFaqArea INT PRIMARY KEY AUTO_INCREMENT, 
+		DsFaqArea VARCHAR(1000),
+		Ordem VARCHAR(1000),
+		FlgAtivo BOOLEAN);
+
+
+CREATE TABLE Noticia ( 
+		IdNoticia INT PRIMARY KEY AUTO_INCREMENT, 
+		DsNoticia VARCHAR(1000),
+		Mensagem VARCHAR(1000),
+		DtCriacao DATETIME,
+		DtEdicao DATETIME,
+		IdNoticiaCategoria INT);
+
+
+CREATE TABLE NoticiaCategoria ( 
+		IdCategoria INT PRIMARY KEY AUTO_INCREMENT, 
+		DsCategoria VARCHAR(1000),
+		Ordem VARCHAR(1000));
+
+
+CREATE TABLE SobreDoc ( 
+		IdDoc INT PRIMARY KEY AUTO_INCREMENT, 
+		DsDoc VARCHAR(1000),
+		DtCriacao DATETIME,
+		DtEdicao DATETIME,
+		Texto VARCHAR(1000),
+		Versao VARCHAR(1000),
+		FlgPublicado BOOLEAN,
+		IdCategoriaDoc INT);
+
+
+CREATE TABLE SobreDocCategoria ( 
+		IdCategoriaDoc INT PRIMARY KEY AUTO_INCREMENT, 
+		DsCategoriadoc VARCHAR(1000));
+
+
+CREATE TABLE ComPostTipo ( 
+		IdTipo INT PRIMARY KEY AUTO_INCREMENT, 
+		DsTipo VARCHAR(1000));
+
+
+CREATE TABLE ComPostCanal ( 
+		IdPostCanal INT PRIMARY KEY AUTO_INCREMENT, 
+		DsPostCanal VARCHAR(1000),
+		IdPostTipo INT,
+		FlgPermiteComentario BOOLEAN,
+		DtCriacao DATETIME,
+		QtdAcesso VARCHAR(1000));
+
+
+CREATE TABLE ComPostMensagem ( 
+		IdPostCanal INT, 
+		IdPostMensagem INT,
+		IdComUsuario INT,
+		Mensagem VARCHAR(1000),
+		FlgOculta BOOLEAN,
+		Dtenvio DATETIME);
+
+
+CREATE TABLE ComUsuario ( 
+		IdComUsuario INT PRIMARY KEY AUTO_INCREMENT, 
+		DscomUsuario VARCHAR(1000),
+		IdNivel INT,
+		DtInicioComunidade DATETIME,
+		DtUltimaVezLogado DATETIME,
+		FlgBanido BOOLEAN,
+		QtdVisualizAcao VARCHAR(1000));
+
+
+CREATE TABLE ComNivel ( 
+		IdNivel INT PRIMARY KEY AUTO_INCREMENT, 
+		DsNivel VARCHAR(1000),
+		Detalhe VARCHAR(1000),
+		Ordem VARCHAR(1000));
+
+
+CREATE TABLE Comparecimento ( 
+		IdComparecimento INT PRIMARY KEY AUTO_INCREMENT, 
+		IdAmbiente INT,
+		QtdLimiteFalta VARCHAR(1000),
+		QtdLimiteAtraso VARCHAR(1000));
+
+
+CREATE TABLE ComparecimentoItem ( 
+		IdComparecimentoItem INT PRIMARY KEY AUTO_INCREMENT, 
+		IdComparecimento INT,
+		DtComparecimento DATETIME,
+		IdComparecimentoTipo INT,
+		FlgJustificado BOOLEAN,
+		FlgArquivado BOOLEAN);
+
+
+CREATE TABLE ComparecimentoTipo ( 
+		IdComparecimentotip INT PRIMARY KEY AUTO_INCREMENT, 
+		DsComparecimentoTipo VARCHAR(1000));
+
+
+CREATE TABLE Enquete ( 
+		IdEnquete INT PRIMARY KEY AUTO_INCREMENT, 
+		DsEnquete VARCHAR(1000),
+		Detalhe VARCHAR(1000),
+		DtCriacao DATETIME,
+		IdUsuarioCriacao INT,
+		IdAmbiente INT,
+		IdEvento INT,
+		FlgFinalizado BOOLEAN,
+		QtdTotalVoto VARCHAR(1000),
+		FlgArquivado BOOLEAN);
+
+
+CREATE TABLE EnqueteItem ( 
+		IdItem INT PRIMARY KEY AUTO_INCREMENT, 
+		DsItem VARCHAR(1000),
+		IdEnquete INT);
+
+
+CREATE TABLE EnqueteVoto ( 
+		IdItem INT, 
+		IdUsuario INT,
+		IdEnquete INT,
+		DtVoto DATETIME);
+
+
+CREATE TABLE Ambiente ( 
+		IdAmbiente INT PRIMARY KEY AUTO_INCREMENT, 
+		DsAmbiente VARCHAR(1000),
+		DtCriacao DATETIME,
+		Detalhe VARCHAR(1000),
+		FlgArquivado BOOLEAN,
+		FlgPublico BOOLEAN,
+		IdUsuarioCriador INT);
+
+
+CREATE TABLE Disciplina ( 
+		IdDisciplina INT PRIMARY KEY AUTO_INCREMENT, 
+		DsDisciplina VARCHAR(1000),
+		DtCriacao DATETIME,
+		IdAmbiente INT);
+
+
+CREATE TABLE Professor ( 
+		IdProfessor INT PRIMARY KEY AUTO_INCREMENT, 
+		Nome VARCHAR(1000),
+		DtCriacao DATETIME,
+		IdAmbiente INT);
+
+
+CREATE TABLE Etiqueta ( 
+		IdEtiqueta INT PRIMARY KEY AUTO_INCREMENT, 
+		DsEtiqueta VARCHAR(1000),
+		IdAmbiente INT);
+
+
+CREATE TABLE Horario ( 
+		IdHorario INT PRIMARY KEY AUTO_INCREMENT, 
+		DsHorario VARCHAR(1000),
+		IdAmbiente INT,
+		FlgArquivado BOOLEAN);
+
+
+CREATE TABLE HorarioItem ( 
+		IdHorarioItem INT PRIMARY KEY AUTO_INCREMENT, 
+		DsHorarioItem VARCHAR(1000),
+		IdDisciplina INT,
+		Dia VARCHAR(1000),
+		HoraInicio VARCHAR(1000),
+		Horafim VARCHAR(1000),
+		IdProfessor INT,
+		IdHorario INT,
+		Nota VARCHAR(1000),
+		FlgArquivado BOOLEAN);
+
+
+CREATE TABLE Evento ( 
+		IdEvento INT PRIMARY KEY AUTO_INCREMENT, 
+		DsEvento VARCHAR(1000),
+		Detalhe VARCHAR(1000),
+		DtCriacao DATETIME,
+		DtEdicao DATETIME,
+		DtInicio DATETIME,
+		DtTermino DATETIME,
+		FlgFinalizado BOOLEAN,
+		FlgArquivado BOOLEAN,
+		IdLista INT);
+
+
+CREATE TABLE EventoTarefaLista ( 
+		IdTarefaLista INT PRIMARY KEY AUTO_INCREMENT, 
+		DsTarefaLista VARCHAR(1000),
+		IdEvento INT,
+		Ordem VARCHAR(1000),
+		DtCriacao DATETIME,
+		FlgArquivado BOOLEAN);
+
+
+CREATE TABLE EventoTarefaItem ( 
+		IdTarefaItem INT PRIMARY KEY AUTO_INCREMENT, 
+		DsTarefaItem VARCHAR(1000),
+		Ordem VARCHAR(1000),
+		IdTarefaLista INT,
+		FlgFinalizado BOOLEAN,
+		FlgArquivado BOOLEAN);
+
+
+CREATE TABLE Lista ( 
+		IdLista INT PRIMARY KEY AUTO_INCREMENT, 
+		DsLista VARCHAR(1000),
+		IdAmbiente INT,
+		Ordem VARCHAR(1000));
+
+
+CREATE TABLE EventoEtiqueta ( 
+		IdEvento INT, 
+		IdEtiqueta INT);
+
+
+CREATE TABLE AmbienteUsuario ( 
+		IdAmbiente INT, 
+		IdUsuario INT,
+		FlgBanido BOOLEAN);
+
+
+CREATE TABLE UsuarioPerfilAcesso ( 
+		IdUsuarioPerfilAcesso INT, 
+		IdUsuario INT,
+		IdPerfilAcesso INT,
+		FlgAtivo BOOLEAN);
+
+
+CREATE TABLE TokenAcesso ( 
+		IdTokenAcesso INT PRIMARY KEY AUTO_INCREMENT, 
+		IdUsuario INT,
+		DtCriacao DATETIME,
+		DtAtualizAcao DATETIME,
+		TempoExpirAcao VARCHAR(1000),
+		IpgerAcao VARCHAR(1000),
+		IdDeviceUsuario INT,
+		FlgExpirado BOOLEAN,
+		Flgmorto BOOLEAN);
+
+
+CREATE TABLE Device ( 
+		IdDevice INT PRIMARY KEY AUTO_INCREMENT, 
+		IdUsuario INT,
+		TokenDevice VARCHAR(1000),
+		Deviceos VARCHAR(1000));
+
+
+CREATE TABLE Deviceos ( 
+		IdDeviceos INT PRIMARY KEY AUTO_INCREMENT, 
+		DsDeviceos VARCHAR(1000));
+
+
+CREATE TABLE PerfilAcesso ( 
+		IdPerfilAcesso INT PRIMARY KEY AUTO_INCREMENT, 
+		DsPerfilAcesso VARCHAR(1000),
+		FlgAtivo BOOLEAN,
+		FlgAdm BOOLEAN);
+
+
+CREATE TABLE Pagina ( 
+		IdPagina INT PRIMARY KEY AUTO_INCREMENT, 
+		DsPagina VARCHAR(1000),
+		Url VARCHAR(1000),
+		FlgAtivo BOOLEAN);
+
+
+CREATE TABLE PerfilAcessoPagina ( 
+		IdPerfilAcesso INT, 
+		IdPagina INT,
+		FlgAtivo BOOLEAN);
+
+
+CREATE TABLE LogAcesso ( 
+		IdLogAcesso INT PRIMARY KEY AUTO_INCREMENT, 
+		IdPagina INT,
+		IdUsuario INT,
+		DtAcesso DATETIME);
+
+
+CREATE TABLE AmbienteHistorico ( 
+		IdAmbienteHistorico INT PRIMARY KEY AUTO_INCREMENT, 
+		IdUsuario INT,
+		Acao VARCHAR(1000),
+		Query VARCHAR(1000),
+		DtAcao DATETIME,
+		IdAmbiente INT);
+
+
+CREATE TABLE UsuarioSegurancaHistorico ( 
+		IdUsuarioSegurancaHistorico INT PRIMARY KEY AUTO_INCREMENT, 
+		IsUsuario VARCHAR(1000),
+		Acao VARCHAR(1000),
+		Query VARCHAR(1000),
+		DtAcao DATETIME);
+
+
+CREATE TABLE LogComandoSql ( 
+		IdLogComandoSql INT PRIMARY KEY AUTO_INCREMENT, 
+		Comando VARCHAR(1000),
+		Status VARCHAR(1000),
+		DtComando DATETIME);
+
+
+CREATE TABLE LembreteLista ( 
+		IdLembreteLista INT PRIMARY KEY AUTO_INCREMENT, 
+		DsLembreteLista VARCHAR(1000),
+		DtCriacao DATETIME,
+		IdAmbiente INT,
+		FlgAtivo BOOLEAN);
+
+
+CREATE TABLE LembreteItem ( 
+		IdLembreteItem INT PRIMARY KEY AUTO_INCREMENT, 
+		DsLembreteItem VARCHAR(1000),
+		DtCriacao DATETIME,
+		FlgConcluido BOOLEAN,
+		Detalhe VARCHAR(1000),
+		DtConclusao DATETIME,
+		FlgArquivado BOOLEAN,
+		IsLembreteLista VARCHAR(1000));
+
+
+CREATE TABLE Usuario ( 
+		IdUsuario INT PRIMARY KEY AUTO_INCREMENT, 
+		Nome VARCHAR(1000),
+		Login VARCHAR(1000),
+		Email VARCHAR(1000),
+		DtCadastro DATETIME,
+		FlgBanido BOOLEAN,
+		FlgAtivo BOOLEAN,
+		FlgalterarSenha BOOLEAN,
+		Senha VARCHAR(1000),
+		SenhaTemp VARCHAR(1000),
+		TokenFoto VARCHAR(1000),
+		TokenCapa VARCHAR(1000),
+		DtNascimento DATETIME,
+		Status VARCHAR(1000),
+		Biografia VARCHAR(1000));
+

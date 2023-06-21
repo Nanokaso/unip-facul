@@ -1,0 +1,11 @@
+C:\Sistemas\_facul\Abina\3 - Construção\ConexaoMySql\ConexaoMySqlDB\bin\Debug\ConexaoMySqlDB.dll
+C:\Sistemas\_facul\Abina\3 - Construção\ConexaoMySql\ConexaoMySqlDB\bin\Debug\ConexaoMySqlDB.pdb
+C:\Sistemas\_facul\Abina\3 - Construção\ConexaoMySql\ConexaoMySqlDB\bin\Debug\MySql.Data.dll
+C:\Sistemas\_facul\Abina\3 - Construção\ConexaoMySql\ConexaoMySqlDB\bin\Debug\Google.Protobuf.dll
+C:\Sistemas\_facul\Abina\3 - Construção\ConexaoMySql\ConexaoMySqlDB\bin\Debug\Renci.SshNet.dll
+C:\Sistemas\_facul\Abina\3 - Construção\ConexaoMySql\ConexaoMySqlDB\bin\Debug\BouncyCastle.Crypto.dll
+C:\Sistemas\_facul\Abina\3 - Construção\ConexaoMySql\ConexaoMySqlDB\obj\Debug\ConexaoMySqlDB.csprojAssemblyReference.cache
+C:\Sistemas\_facul\Abina\3 - Construção\ConexaoMySql\ConexaoMySqlDB\obj\Debug\ConexaoMySqlDB.csproj.CoreCompileInputs.cache
+C:\Sistemas\_facul\Abina\3 - Construção\ConexaoMySql\ConexaoMySqlDB\obj\Debug\ConexaoMySqlDB.csproj.CopyComplete
+C:\Sistemas\_facul\Abina\3 - Construção\ConexaoMySql\ConexaoMySqlDB\obj\Debug\ConexaoMySqlDB.dll
+C:\Sistemas\_facul\Abina\3 - Construção\ConexaoMySql\ConexaoMySqlDB\obj\Debug\ConexaoMySqlDB.pdb
