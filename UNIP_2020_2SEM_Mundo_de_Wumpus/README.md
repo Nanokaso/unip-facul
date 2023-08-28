@@ -17,6 +17,8 @@ O Wumpus pode ser morto pelo agente por uma flexa mas este possue somente uma ch
 
 -------------------------------------
 
+Progamação feita em Prolog
+
 #Movimentos vitoriosos
 
 iniciar.
